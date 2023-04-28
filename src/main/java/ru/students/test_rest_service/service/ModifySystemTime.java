@@ -8,12 +8,12 @@ import ru.students.test_rest_service.model.Response;
 
 @Service
 @RequiredArgsConstructor
-@Qualifier
+@Qualifier("ModifySystemTime")
 public class ModifySystemTime implements MyModifyService{
 
     @Override
     public Response modify(Response response) {
-        response.setSystemTime("");
+        response.setSystemTime("Не работает");
         return response;
     }
 }
